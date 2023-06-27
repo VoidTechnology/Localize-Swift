@@ -11,16 +11,9 @@ let package = Package(
     ],
     dependencies: [],
     targets: [
-        #if os(macOS)
-        .target(
-            name: "Localize_Swift",
-            path: "Sources", 
-            exclude: ["Sources/UI"])
-        #else
         .target(
             name: "Localize_Swift",
             path: "Sources")
-        #endif
     ],
     swiftLanguageVersions: [.v5]
 )
